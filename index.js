@@ -1,4 +1,4 @@
-const defTasks = [
+const items = [
 	"Прогуляться",
 	"Полить цветы",
 	"Помыть посуду",
@@ -18,10 +18,10 @@ function loadTasks() {
 			return JSON.parse(storedTasks);
 		} catch (e) {
 			console.error("Ошибка парсинга localStorage, используются задачи по умолчанию");
-			return defTasks;
+			return items;
 		}
 	}
-	return defTasks;
+	return items;
 }
 
 function createItem(item) {
